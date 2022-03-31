@@ -262,3 +262,30 @@ function CloseWordPopUp() {
     document.getElementById("word-popup-menu").style.display = "none";
     document.getElementById("main-content").style.filter = "none";
 }
+
+function SearchWords() {
+    var savedWords = [[], []];
+    setTimeout(() => {
+        if(document.getElementById("input-field-search").value != "") {
+            for (let index = 0; index < words.length; index++) {
+                if(words[index].WORDS != "") {
+                    if(words[index].WORDS.startsWith(document.getElementById("input-field-search").value.toLowerCase())) {
+                        savedWords[0].push(words[index].WORDS);
+                        savedWords[1].push(index);
+                    }
+                }
+            }
+            RemoveWords("words-list");
+            var page = document.createElement("div");
+            page.setAttribute("id", "page-0");
+            page.setAttribute("class", "page-active");
+            document.getElementById("words-list").appendChild(page);
+            for (let i = 0; i < savedWords[1].length; i++) {
+                WriteWords(savedWords[1][i], "", "", "page-0");
+            }
+        } else {
+            RemoveWords("words-list");
+            LoadWords();
+        }
+    }, 100);
+}
