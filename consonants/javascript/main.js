@@ -141,12 +141,14 @@ function ShowFavorites() {
 
 function PlaySound(soundNumber) {
     var audioName = document.getElementById("specific-content-"+lastActiveButton+"").getElementsByClassName("sound-container")[soundNumber].querySelector("#letter-sound-"+soundNumber+"").innerHTML;
-    var audio = new Audio("consonants_BrE/"+ audioName +".mp3");
+    var audio = new Audio("./consonants_BrE/"+ audioName +".mp3");
     audio.play();
     var video = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#video');
     var source = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#source');
     if(!source.src.includes(""+ audioName +".mp4")) {
         source.setAttribute('src', "video_consonants/"+ audioName +".mp4");
+        video.removeAttribute("controls","controls");
+        video.setAttribute("poster","./thumbnails/"+ audioName +".png");
         video.load();
     }
 }
@@ -164,3 +166,16 @@ setTimeout(() => {
         }
     }
 }, 200);
+
+for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
+    document.getElementsByTagName("video")[i].addEventListener('ended', function() {
+        document.getElementsByTagName("video")[i].removeAttribute("controls","controls");
+        document.getElementsByTagName("video")[i].load();
+    })
+}
+
+for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
+    document.getElementsByTagName("video")[i].addEventListener('loadeddata', function() {
+        document.getElementsByTagName("video")[i].setAttribute("controls","controls");
+    })
+}

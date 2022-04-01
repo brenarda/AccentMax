@@ -60,7 +60,7 @@ function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     breElement.setAttribute("class", "center");
     breElement.innerHTML = words[i].BrE;
     var splitBRE = words[i].BrE.split(underlineBRE, 2);
-    if(underlineBRE == "") {
+    if(underlineBRE == "" || !words[i].BrE.includes(underlineBRE)) {
         breElement.innerHTML = words[i].BrE;
     } else if(splitBRE[0] == "") {
         breElement.innerHTML = "<p class='underline-part'>" + underlineBRE + "</p>" + words[i].BrE.slice(1);
