@@ -61,11 +61,14 @@ body {
     padding: 10px 15px;
     border-radius: 10px 10px 0 0;
     cursor: pointer;
+    transition: padding .3s ease, border-radius .3s ease;
 }
 
 .letter-active {
     background-color: #76218d;
     color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
 }
 
 .specific-content {
