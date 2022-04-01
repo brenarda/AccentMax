@@ -48,8 +48,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-0">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">b</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">b</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -57,6 +57,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/b.png">
                             <source src="video_consonants/b.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>b</h3>
                         <h2>Digraph</h2>
@@ -169,20 +173,20 @@
                 </div>
                 <div class="specific-content" id="specific-content-1">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">s</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">s</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">k</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">k</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-2">tʃ</p>
+                            <p id="letter-sound-2" onclick="ChangeLetter(2)">tʃ</p>
                             <img onclick="PlaySound(2)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-3">ʃ</p>
+                            <p id="letter-sound-3" onclick="ChangeLetter(3)">ʃ</p>
                             <img onclick="PlaySound(3)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -190,6 +194,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/s.png">
                             <source src="video_consonants/s.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>c, cc, ck, ch</h3>
                         <h2>Digraph</h2>
@@ -335,12 +343,12 @@
                 </div>
                 <div class="specific-content" id="specific-content-2">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">d</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">d</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">dʒ</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">dʒ</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -348,6 +356,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/d.png">
                             <source src="video_consonants/d.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>d</h3>
                         <h2>Digraph</h2>
@@ -416,8 +428,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-3">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">f</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">f</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -425,6 +437,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/f.png">
                             <source src="video_consonants/f.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>f</h3>
                         <h2>Digraph</h2>
@@ -493,12 +509,12 @@
                 </div>
                 <div class="specific-content" id="specific-content-4">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">dʒ</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">dʒ</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">g</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">g</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -506,6 +522,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/dʒ.png">
                             <source src="video_consonants/dʒ.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>g</h3>
                         <h2>Digraph</h2>
@@ -574,8 +594,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-5">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">h</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">h</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -583,6 +603,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/h.png">
                             <source src="video_consonants/h.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>h</h3>
                     </div>
@@ -627,8 +651,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-6">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">dʒ</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">dʒ</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -636,6 +660,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/dʒ.png">
                             <source src="video_consonants/dʒ.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>j</h3>
                     </div>
@@ -691,8 +719,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-7">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">k</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">k</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -700,6 +728,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/k.png">
                             <source src="video_consonants/k.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>k</h3>
                     </div>
@@ -755,8 +787,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-8">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">l</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">l</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -764,6 +796,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/l.png">
                             <source src="video_consonants/l.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>l</h3>
                         <h2>Digraph</h2>
@@ -832,8 +868,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-9">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">m</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">m</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -841,6 +877,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/m.png">
                             <source src="video_consonants/m.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>m</h3>
                         <h2>Digraph</h2>
@@ -909,12 +949,12 @@
                 </div>
                 <div class="specific-content" id="specific-content-10">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">n</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">n</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">ŋ</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">ŋ</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -922,6 +962,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/n.png">
                             <source src="video_consonants/n.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>n</h3>
                         <h2>Digraph</h2>
@@ -1067,12 +1111,12 @@
                 </div>
                 <div class="specific-content" id="specific-content-11">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">p</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">p</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">f</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">f</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1080,6 +1124,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/p.png">
                             <source src="video_consonants/p.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>p</h3>
                         <h2>Digraph</h2>
@@ -1181,8 +1229,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-12">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">k</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">k</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1190,6 +1238,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/k.png">
                             <source src="video_consonants/k.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>q</h3>
                     </div>
@@ -1245,8 +1297,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-13">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">r</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">r</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
@@ -1257,6 +1309,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/r.png">
                             <source src="video_consonants/r.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>r</h3>
                         <h2>Digraph</h2>
@@ -1336,20 +1392,20 @@
                 </div>
                 <div class="specific-content" id="specific-content-14">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">s</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">s</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">z</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">z</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-2">ʃ</p>
+                            <p id="letter-sound-2" onclick="ChangeLetter(2)">ʃ</p>
                             <img onclick="PlaySound(2)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-3">ʒ</p>
+                            <p id="letter-sound-3" onclick="ChangeLetter(3)">ʒ</p>
                             <img onclick="PlaySound(3)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1357,6 +1413,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/s.png">
                             <source src="video_consonants/s.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>s</h3>
                         <h2>Digraph</h2>
@@ -1491,20 +1551,20 @@
                 </div>
                 <div class="specific-content" id="specific-content-15">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">t</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">t</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">tʃ</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">tʃ</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-2">θ</p>
+                            <p id="letter-sound-2" onclick="ChangeLetter(2)">θ</p>
                             <img onclick="PlaySound(2)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-3">ð</p>
+                            <p id="letter-sound-3" onclick="ChangeLetter(3)">ð</p>
                             <img onclick="PlaySound(3)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1512,6 +1572,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/t.png">
                             <source src="video_consonants/t.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>s</h3>
                         <h2>Digraph</h2>
@@ -1647,8 +1711,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-16">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">v</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">v</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1656,6 +1720,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/v.png">
                             <source src="video_consonants/v.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>v</h3>
                     </div>
@@ -1722,12 +1790,12 @@
                 </div>
                 <div class="specific-content" id="specific-content-17">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">v</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">v</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                         <div class="sound-container">
-                            <p id="letter-sound-1">h</p>
+                            <p id="letter-sound-1" onclick="ChangeLetter(1)">h</p>
                             <img onclick="PlaySound(1)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1735,6 +1803,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/v.png">
                             <source src="video_consonants/v.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>w</h3>
                         <h2>Digraph</h2>
@@ -1825,8 +1897,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-18">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">ks</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">ks</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1834,6 +1906,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/ks.png">
                             <source src="video_consonants/ks.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>w</h3>
                     </div>
@@ -1889,8 +1965,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-19">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">j</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">j</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1898,6 +1974,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/j.png">
                             <source src="video_consonants/j.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>y</h3>
                     </div>
@@ -1953,8 +2033,8 @@
                 </div>
                 <div class="specific-content" id="specific-content-20">
                     <div class="sounds-section">
-                        <div class="sound-container">
-                            <p id="letter-sound-0">z</p>
+                        <div class="sound-container sound-selected">
+                            <p id="letter-sound-0" onclick="ChangeLetter(0)">z</p>
                             <img onclick="PlaySound(0)" src="images/Speaker.png">
                         </div>
                     </div>
@@ -1962,6 +2042,10 @@
                         <video width="240" height="240" id="video" poster="./thumbnails/z.png">
                             <source src="video_consonants/z.mp4" type="video/mp4" id="source">
                         </video>
+                        <div id="video-controls">
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
                         <h2>Grapheme</h2>
                         <h3>z</h3>
                         <h2>Digraph</h2>

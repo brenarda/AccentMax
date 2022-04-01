@@ -143,14 +143,6 @@ function PlaySound(soundNumber) {
     var audioName = document.getElementById("specific-content-"+lastActiveButton+"").getElementsByClassName("sound-container")[soundNumber].querySelector("#letter-sound-"+soundNumber+"").innerHTML;
     var audio = new Audio("./consonants_BrE/"+ audioName +".mp3");
     audio.play();
-    var video = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#video');
-    var source = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#source');
-    if(!source.src.includes(""+ audioName +".mp4")) {
-        source.setAttribute('src', "video_consonants/"+ audioName +".mp4");
-        video.removeAttribute("controls","controls");
-        video.setAttribute("poster","./thumbnails/"+ audioName +".png");
-        video.load();
-    }
 }
 
 setTimeout(() => {
@@ -171,11 +163,59 @@ for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
     document.getElementsByTagName("video")[i].addEventListener('ended', function() {
         document.getElementsByTagName("video")[i].removeAttribute("controls","controls");
         document.getElementsByTagName("video")[i].load();
-    })
+        document.getElementById("specific-content-"+i+"").querySelector("#play-pause").innerHTML = "&#9658;";
+        setTimeout(() => {
+            var value = (100 / document.getElementsByTagName("video")[i].duration) * document.getElementsByTagName("video")[i].currentTime;
+            document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value = value;
+        }, 50);
+    });
+    document.getElementsByTagName("video")[i].addEventListener('loadeddata', function() {
+        setTimeout(() => {
+            var value = (100 / document.getElementsByTagName("video")[i].duration) * document.getElementsByTagName("video")[i].currentTime;
+            document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value = value;
+        }, 50);
+    }, false);
 }
 
 for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
-    document.getElementsByTagName("video")[i].addEventListener('loadeddata', function() {
-        document.getElementsByTagName("video")[i].setAttribute("controls","controls");
-    })
+    document.getElementById("specific-content-"+i+"").querySelector("#play-pause").addEventListener("click", function() {
+        if (document.getElementById("specific-content-"+i+"").querySelector('#video').paused == true) {
+          document.getElementById("specific-content-"+i+"").querySelector('#video').play();
+      
+          document.getElementById("specific-content-"+i+"").querySelector("#play-pause").innerHTML = "&#10074;&#10074;";
+        } else {
+          document.getElementById("specific-content-"+i+"").querySelector('#video').pause();
+      
+          document.getElementById("specific-content-"+i+"").querySelector("#play-pause").innerHTML = "&#9658;";
+        }
+    });
+    document.getElementsByTagName("video")[i].addEventListener("timeupdate", function() {
+        var value = (100 / document.getElementsByTagName("video")[i].duration) * document.getElementsByTagName("video")[i].currentTime;
+        document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value = value;
+    });
+
+    document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").addEventListener("change", function() {
+        // Calculate the new time
+        var time = document.getElementsByTagName("video")[i].duration * (document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value / 100);
+        
+        // Update the video time
+        document.getElementsByTagName("video")[i].currentTime = time;
+    });
+}
+
+function ChangeLetter(letterNumber) {
+    var video = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#video');
+    var source = document.getElementById("specific-content-"+lastActiveButton+"").querySelector('#source');
+    var audioName = document.getElementById("specific-content-"+lastActiveButton+"").getElementsByClassName("sound-container")[letterNumber].querySelector("#letter-sound-"+letterNumber+"").innerHTML;
+    if(!source.src.includes(""+ audioName +".mp4")) {
+        source.setAttribute('src', "video_consonants/"+ audioName +".mp4");
+        video.removeAttribute("controls","controls");
+        video.setAttribute("poster","./thumbnails/"+ audioName +".png");
+        video.load();
+    }
+    var teste = document.getElementById("specific-content-"+lastActiveButton+"").querySelectorAll(".sound-container");
+    for (let i = 0; i < teste.length; i++) {
+        teste[i].classList.remove("sound-selected");
+    }
+    teste[letterNumber].classList.add("sound-selected");
 }
