@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+    font-family: lightFont;
+    src: url(../../source-sans-pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: regularFont;
+    src: url(../../source-sans-pro/SourceSansPro-Regular.ttf);
+}
 
 * {
 	margin: 0;
@@ -9,7 +17,10 @@
 	list-style: none;
 	-webkit-tap-highlight-color: transparent;
 	text-decoration: none;
-    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 video {
@@ -21,7 +32,8 @@ body {
     color: white;
     background: rgb(0,0,0);
     min-height: 100vh;
-    background: linear-gradient(180deg, #190026 0%, #350050 68%, #86299c 100%); 
+    background: linear-gradient(180deg, #190026 0%, #350050 68%, #86299c 100%);
+    font-family: regularFont; 
 }
 
 .main-container {
@@ -34,7 +46,6 @@ body {
 }
 
 .title-page {
-    font-family: 'Didact Gothic', sans-serif;
     font-weight: bold;
     position: relative;
     text-align: center;
@@ -104,6 +115,11 @@ body {
 
 .video-section h2 {
     margin-top: 20px;
+    font-family: lightFont;
+}
+
+.word-line h2 {
+    font-family: lightFont;
 }
 
 .video-section h3 {
@@ -335,7 +351,14 @@ video::-webkit-media-controls-current-time-display {
 
 #video-controls {
     display: flex;
+    flex-direction: column;
     gap: 8px;
+}
+
+#video-controls div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 input[type=range]{
@@ -362,4 +385,9 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]:focus {
     outline: none;
+}
+
+#mute img {
+    width: 20px;
+    height: 20px;
 }

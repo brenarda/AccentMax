@@ -146,9 +146,19 @@
             </div>
             <div class="words-menu">
                 <div class="video-section">
-                    <video width="240" height="240" controls id="video">
+                    <video width="240" height="240" id="video">
                         <source src="images/ɑ.mp4" type="video/mp4" id="source">
                     </video>
+                    <div id="video-controls">
+                        <div>
+                            <button type="button" id="play-pause">&#9658;</button>
+                            <input type="range" id="seek-bar" value="0">
+                        </div>
+                        <div>
+                            <button type="button" id="mute"><img src="../images/speaker-icon-video.png"></button>
+                            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        </div>
+                    </div>
                     <a href="https://en.wikipedia.org/wiki/Grapheme" target="_blank">
                         <h2 id="graph-title">Graph</h2>
                     </a>

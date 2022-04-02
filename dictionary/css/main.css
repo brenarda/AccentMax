@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@font-face {
+    font-family: lightFont;
+    src: url(../../source-sans-pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: regularFont;
+    src: url(../../source-sans-pro/SourceSansPro-Regular.ttf);
+}
 
 * {
 	margin: 0;
@@ -10,7 +18,11 @@
 	-webkit-tap-highlight-color: transparent;
 	text-decoration: none;
 	color: white;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: regularFont;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 body {
@@ -35,7 +47,6 @@ body {
 }
 
 .words-list {
-    font-family: 'Didact Gothic', sans-serif;
     height: 600px;
     overflow-y: scroll;
 }
@@ -120,8 +131,7 @@ span {
 }
 
 .title-page {
-    font-family: 'Didact Gothic', sans-serif;
-    font-weight: bold;
+    font-family: lightFont;
     position: relative;
     text-align: center;
     margin-top: 50px;
@@ -326,7 +336,10 @@ input[type=text], select, textarea {
     margin-left: -10px;
 }
 
-
 :focus {
     outline: none;
+}
+
+.word-line h2 {
+    font-family: lightFont;
 }

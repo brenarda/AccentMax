@@ -1,4 +1,4 @@
-var words = JSON.parse(data);
+var words = JSON.parse(JSON.stringify(data));
 var sortingLetter = "i";
 var vowels = ["A", "E", "I", "O", "U", "Y"];
 var graphsInformation = JSON.parse(information);
@@ -140,12 +140,17 @@ function UpdateWords(buttonNumber) {
     var video = document.getElementById('video');
     var source = document.getElementById('source');
     source.setAttribute('src', "../videos/"+ (parseInt(buttonNumber)+1) +".mp4");
+    if(document.getElementById("letter-value-"+ buttonNumber +"").innerHTML == "∅") {
+        video.setAttribute("poster","../thumbnails/silent.png");
+    } else {
+        video.setAttribute("poster","../thumbnails/"+ document.getElementById("letter-value-"+ buttonNumber +"").innerHTML +".png");
+    }
     video.load();
-    video.play();
+
     document.getElementById("graph-title").style.display = "none";
     document.getElementById("digraph-title").style.display = "none";
     for (let i = 0; i < graphsInformation.length; i++) {
-        if(graphsInformation[i].sounds == document.getElementById("letter-value-"+buttonNumber+"").innerHTML) {
+        if(graphsInformation[i].sounds == document.getElementById("letter-value-"+buttonNumber+"").innerHTML || (graphsInformation[i].sounds == "mute" && document.getElementById("letter-value-"+buttonNumber+"").innerHTML == "∅")) {
             var array = graphsInformation[i].graphs.split(",");
             for (let index = 0; index < array.length; index++) {
                 var word = document.createElement("p");
@@ -299,3 +304,48 @@ function CloseMenu() {
     document.getElementById("sidebar-menu").style.left = "-250px"
     document.getElementById("main-content").style.filter = "none";
 }
+
+document.getElementsByTagName("video")[0].addEventListener('ended', function() {
+    document.getElementById("play-pause").innerHTML = "&#9658;";
+    setTimeout(() => {
+        var value = (100 / document.getElementsByTagName("video")[0].duration) * document.getElementsByTagName("video")[0].currentTime;
+        document.querySelector("#seek-bar").value = value;
+    }, 50);
+});
+document.getElementsByTagName("video")[0].addEventListener('loadeddata', function() {
+    setTimeout(() => {
+        var value = (100 / document.getElementsByTagName("video")[0].duration) * document.getElementsByTagName("video")[0].currentTime;
+        document.querySelector("#seek-bar").value = value;
+    }, 50);
+}, false);
+document.querySelector("#play-pause").addEventListener("click", function() {
+    if (document.querySelector('#video').paused == true) {
+        document.querySelector('#video').play();
+    
+        document.querySelector("#play-pause").innerHTML = "&#10074;&#10074;";
+    } else {
+        document.querySelector('#video').pause();
+    
+        document.querySelector("#play-pause").innerHTML = "&#9658;";
+    }
+});
+document.getElementsByTagName("video")[0].addEventListener("timeupdate", function() {
+    var value = (100 / document.getElementsByTagName("video")[0].duration) * document.getElementsByTagName("video")[0].currentTime;
+    document.querySelector("#seek-bar").value = value;
+});
+document.querySelector("#seek-bar").addEventListener("change", function() {
+    var time = document.getElementsByTagName("video")[0].duration * (document.querySelector("#seek-bar").value / 100);
+    document.getElementsByTagName("video")[0].currentTime = time;
+});
+document.querySelector("#mute").addEventListener("click", function() {
+    if (document.getElementsByTagName("video")[0].muted == false) {
+        document.getElementsByTagName("video")[0].muted = true;
+        document.querySelector("#mute").innerHTML = '<img src="../images/mute-icon-video.png">';
+    } else {
+        document.getElementsByTagName("video")[0].muted = false;
+        document.querySelector("#mute").innerHTML = '<img src="../images/speaker-icon-video.png">';
+    }
+});
+document.querySelector("#volume-bar").addEventListener("change", function() {
+    document.getElementsByTagName("video")[0].volume = document.querySelector("#volume-bar").value;
+});

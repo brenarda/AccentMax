@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
+@font-face {
+    font-family: lightFont;
+    src: url(../../../source-sans-pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: regularFont;
+    src: url(../../../source-sans-pro/SourceSansPro-Regular.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,17 +21,21 @@
 	-webkit-tap-highlight-color: transparent;
 	text-decoration: none;
 	color: white;
-    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 video {
     border-radius: 10px;
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
 }
 
 body {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, #190026 0%, #350050 68%, #86299c 100%); 
+    font-family: regularFont; 
 }
 
 .upper-menu {
@@ -71,7 +85,6 @@ body {
 
 [data-content]:hover::before {
     content: attr(data-content);
-    font-family: 'Didact Gothic', sans-serif;
     pointer-events: all;
     padding: 4px 8px;
     color: #FFFFFF;
@@ -162,7 +175,6 @@ body {
 }
 
 .letter h3 {
-    font-family: Arial !important;
     line-height: 30px;
 }
 
@@ -180,7 +192,6 @@ body {
 }
 
 .words-list {
-    font-family: 'Didact Gothic', sans-serif;
     height: 600px;
     overflow-y: scroll;
 }
@@ -241,6 +252,10 @@ span {
     width: fit-content;
 }
 
+h2 {
+    font-family: lightFont;
+}
+
 .show-favorites {
     display: flex;
     align-items: center;
@@ -298,14 +313,14 @@ span {
     background-clip: padding-box;
  }
 
- .menu-icon {
-     width: 30px;
-     height: 30px;
-     position: absolute;
-     top: 60px;
-     left: 15px;
-     cursor: pointer;
- }
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    cursor: pointer;
+}
 
 .sidebar-menu {
     position: fixed;
@@ -342,20 +357,6 @@ span {
 .flex-title img {
     height: 35px;
     width: 35px;
-}
-
-.special-container {
-    justify-content: center !important;
-}
-
-.special-container img {
-    height: 18px;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.special-letter {
-    margin: 0 !important;
 }
 
 a {
@@ -443,4 +444,61 @@ a {
 #graph-title,
 #digraph-title {
     position: relative;
+}
+
+#video-controls button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #171717;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#video-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 20px 20px;
+}
+
+#video-controls div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #350050;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #a71fc5;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+#mute img {
+    width: 20px;
+    height: 20px;
 }

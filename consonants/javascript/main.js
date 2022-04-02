@@ -15,7 +15,7 @@ function WriteWords(i, underlineLetter, underlineBRE, appendLocation, word, page
     var favoriteIcon = document.createElement("img");
     favoriteIcon.setAttribute("id", "favorite-icon-"+ index +"");
     favoriteIcon.setAttribute("onclick", "ChangeImg("+ i +", "+page+", "+index+")");
-    if(localStorage.getItem("favorite-icon-"+ i +"") == 1) {
+    if(localStorage.getItem("favorite-icon-"+ i +"") == 1 || favoriteWordsVisible) {
         favoriteIcon.setAttribute("src", "images/favorite-icon-active.png");
         favoriteIcon.setAttribute("class", "active");
     } else {
@@ -162,7 +162,6 @@ setTimeout(() => {
 for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
     document.getElementsByTagName("video")[i].addEventListener('ended', function() {
         document.getElementsByTagName("video")[i].removeAttribute("controls","controls");
-        document.getElementsByTagName("video")[i].load();
         document.getElementById("specific-content-"+i+"").querySelector("#play-pause").innerHTML = "&#9658;";
         setTimeout(() => {
             var value = (100 / document.getElementsByTagName("video")[i].duration) * document.getElementsByTagName("video")[i].currentTime;
@@ -175,9 +174,6 @@ for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
             document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value = value;
         }, 50);
     }, false);
-}
-
-for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
     document.getElementById("specific-content-"+i+"").querySelector("#play-pause").addEventListener("click", function() {
         if (document.getElementById("specific-content-"+i+"").querySelector('#video').paused == true) {
           document.getElementById("specific-content-"+i+"").querySelector('#video').play();
@@ -193,13 +189,21 @@ for (let i = 0; i < document.getElementsByTagName("video").length; i++) {
         var value = (100 / document.getElementsByTagName("video")[i].duration) * document.getElementsByTagName("video")[i].currentTime;
         document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value = value;
     });
-
     document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").addEventListener("change", function() {
-        // Calculate the new time
         var time = document.getElementsByTagName("video")[i].duration * (document.getElementById("specific-content-"+i+"").querySelector("#seek-bar").value / 100);
-        
-        // Update the video time
         document.getElementsByTagName("video")[i].currentTime = time;
+    });
+    document.getElementById("specific-content-"+i+"").querySelector("#mute").addEventListener("click", function() {
+        if (document.getElementsByTagName("video")[i].muted == false) {
+          document.getElementsByTagName("video")[i].muted = true;
+          document.getElementById("specific-content-"+i+"").querySelector("#mute").innerHTML = '<img src="./images/mute-icon-video.png">';
+        } else {
+          document.getElementsByTagName("video")[i].muted = false;
+          document.getElementById("specific-content-"+i+"").querySelector("#mute").innerHTML = '<img src="./images/speaker-icon-video.png">';
+        }
+    });
+    document.getElementById("specific-content-"+i+"").querySelector("#volume-bar").addEventListener("change", function() {
+        document.getElementsByTagName("video")[i].volume = document.getElementById("specific-content-"+i+"").querySelector("#volume-bar").value;
     });
 }
 
