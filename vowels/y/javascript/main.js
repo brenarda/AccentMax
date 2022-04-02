@@ -5,6 +5,7 @@ var graphsInformation = JSON.parse(information);
 
 function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     underlineLetter = "";
+    underlineBRE = "";
     var wordContainer = document.createElement("div");
     wordContainer.setAttribute("class", "word-line");
     wordContainer.setAttribute("id", "word-line-"+ i +"");

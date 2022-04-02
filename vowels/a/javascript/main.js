@@ -5,6 +5,7 @@ var graphsInformation = JSON.parse(information);
 
 function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     underlineLetter = "";
+    underlineBRE = "";
     var wordContainer = document.createElement("div");
     wordContainer.setAttribute("class", "word-line");
     wordContainer.setAttribute("id", "word-line-"+ i +"");
@@ -146,7 +147,7 @@ function UpdateWords(buttonNumber) {
         video.setAttribute("poster","../thumbnails/"+ document.getElementById("letter-value-"+ buttonNumber +"").innerHTML +".png");
     }
     video.load();
-
+    var savedLetter = [];
     document.getElementById("graph-title").style.display = "none";
     document.getElementById("digraph-title").style.display = "none";
     for (let i = 0; i < graphsInformation.length; i++) {
@@ -156,6 +157,7 @@ function UpdateWords(buttonNumber) {
                 var word = document.createElement("p");
                 word.setAttribute("class", "underline");
                 word.innerHTML = array[index];
+                savedLetter.push(array[index]);
                 if(array[index].length < 2) {
                     document.getElementById("graph-title").style.display = "block";
                     document.getElementById("graph-title").setAttribute("data-content", "In linguistics, a grapheme is the smallest unit of a writing system of any given language.[1] An individual grapheme may or may not carry meaning by itself, and may or may not correspond to a single phoneme of the spoken language.")
@@ -168,6 +170,7 @@ function UpdateWords(buttonNumber) {
             }
         }
     }
+    savedLetter.reverse();
     RemoveWords("words-list");
     for (let mainIndex = 0; mainIndex < words.length; mainIndex++) {
         var reBrackets = /\((.*?)\)/g;
@@ -199,7 +202,14 @@ function UpdateWords(buttonNumber) {
             }
             for (let i = 0; i < sortedArray.length; i++) {
                 if(document.getElementById("letter-value-"+buttonNumber+"").innerHTML == sortedArray[i] || (document.getElementById("letter-value-"+buttonNumber+"").innerHTML == "∅" && sortedArray[i] == "mute")) {
-                    WriteWords(mainIndex, sortingLetter, sortedArray[i], "words-list");
+                    for (let letterLoop = 0; letterLoop < savedLetter.length; letterLoop++) {
+                        if(words[mainIndex].Word.includes(savedLetter[i])) {
+                            savedLetter = [savedLetter[i]];
+                            break;
+                        }
+                    }
+                    console.log(savedLetter);
+                    WriteWords(mainIndex, savedLetter[0], sortedArray[i], "words-list");
                     break;
                 }
             }
