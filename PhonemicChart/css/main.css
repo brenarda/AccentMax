@@ -134,6 +134,7 @@ a {
 .chart h2 {
     padding: 15px;
     font-family: lightFont;
+    color: #FFBE86;
 }
 
 .monoptongs-buttons {
@@ -156,7 +157,7 @@ a {
     gap: 10px;
     padding: 0 15px;
     display: flex;
-    border: 2px #811394 solid;
+    border: 2px #3777FF solid;
     margin: 0 auto;
     border-radius: 5px;
     height: 50px;

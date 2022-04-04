@@ -127,7 +127,7 @@ function UpdateWords(buttonNumber) {
     if(lastAudioPlayed != -1) {
         document.getElementById("letter-" + lastAudioPlayed + "").style.backgroundColor = "transparent";
     }
-    document.getElementById("letter-" + buttonNumber + "").style.backgroundColor = "#811394";
+    document.getElementById("letter-" + buttonNumber + "").style.backgroundColor = "#3777FF";
     lastAudioPlayed = buttonNumber;
     const parent = document.getElementById("graph");
     while (parent.firstChild) {

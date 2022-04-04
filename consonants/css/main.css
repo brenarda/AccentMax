@@ -76,7 +76,7 @@ body {
 }
 
 .letter-active {
-    background-color: #76218d;
+    background-color: #3777FF;
     color: white;
     padding: 20px 30px;
     border-radius: 10px;
@@ -116,6 +116,7 @@ body {
 .video-section h2 {
     margin-top: 20px;
     font-family: lightFont;
+    color: #FFE156;
 }
 
 .word-line h2 {
@@ -319,7 +320,7 @@ video::-webkit-media-controls-current-time-display {
 .sound-container p {
     padding: 0 15px;
     display: flex;
-    border: 2px #76218d solid;
+    border: 2px #3777FF solid;
     margin: 0 5px;
     border-radius: 5px;
     height: 50px;
@@ -333,7 +334,7 @@ video::-webkit-media-controls-current-time-display {
 }
 
 .sound-selected p {
-    background-color: #76218d;
+    background-color: #3777FF;
 }
 
 #video-controls button {
