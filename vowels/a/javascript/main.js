@@ -192,12 +192,12 @@ function UpdateWords(buttonNumber) {
                     }
                 }
             }
-            var sortedArray;
+            var sortedArray = [];
             for (let i = 0; i < lettersArray.length; i++) {
-                if(lettersArray.includes(sortingLetter.toUpperCase())) {
-                    sortedArray = finalArray[lettersArray.indexOf(sortingLetter.toUpperCase())];
-                } else {
-                    sortedArray = [];
+                if(lettersArray[i].toString().includes(sortingLetter.toUpperCase()) && finalArray[i] != undefined) {
+                    for (let indexArrayLength = 0; indexArrayLength < finalArray[i].length; indexArrayLength++) {
+                        sortedArray.push(finalArray[i][indexArrayLength]);  
+                    }
                 }
             }
             for (let i = 0; i < sortedArray.length; i++) {
@@ -208,7 +208,6 @@ function UpdateWords(buttonNumber) {
                             break;
                         }
                     }
-                    console.log(savedLetter);
                     WriteWords(mainIndex, savedLetter[0], sortedArray[i], "words-list");
                     break;
                 }

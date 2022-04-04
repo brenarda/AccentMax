@@ -1,4 +1,4 @@
-var words = JSON.parse(data);
+var words = JSON.parse(JSON.stringify(data));
 var sortingLetter = "u";
 var vowels = ["A", "E", "I", "O", "U", "Y"];
 var graphsInformation = JSON.parse(information);
@@ -61,7 +61,7 @@ function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     breElement.setAttribute("class", "center");
     breElement.innerHTML = words[i].BrE;
     var splitBRE = words[i].BrE.split(underlineBRE, 2);
-    if(underlineBRE == "" || !words[i].BrE.includes(underlineBRE)) {
+    if(underlineBRE == ""  || !words[i].BrE.includes(underlineBRE)) {
         breElement.innerHTML = words[i].BrE;
     } else if(splitBRE[0] == "") {
         breElement.innerHTML = "<p class='underline-part'>" + underlineBRE + "</p>" + words[i].BrE.slice(1);
@@ -137,20 +137,27 @@ function UpdateWords(buttonNumber) {
     while (parent2.firstChild) {
         parent2.firstChild.remove();
     }
+
     var video = document.getElementById('video');
     var source = document.getElementById('source');
     source.setAttribute('src', "../videos/"+ (parseInt(buttonNumber)+1) +".mp4");
-    video.setAttribute("poster","../thumbnails/"+ document.getElementById("letter-value-"+ buttonNumber +"").innerHTML +".png");
+    if(document.getElementById("letter-value-"+ buttonNumber +"").innerHTML == "∅") {
+        video.setAttribute("poster","../thumbnails/silent.png");
+    } else {
+        video.setAttribute("poster","../thumbnails/"+ document.getElementById("letter-value-"+ buttonNumber +"").innerHTML +".png");
+    }
     video.load();
+    var savedLetter = [];
     document.getElementById("graph-title").style.display = "none";
     document.getElementById("digraph-title").style.display = "none";
     for (let i = 0; i < graphsInformation.length; i++) {
-        if(graphsInformation[i].sounds == document.getElementById("letter-value-"+buttonNumber+"").innerHTML) {
+        if(graphsInformation[i].sounds == document.getElementById("letter-value-"+buttonNumber+"").innerHTML || (graphsInformation[i].sounds == "mute" && document.getElementById("letter-value-"+buttonNumber+"").innerHTML == "∅")) {
             var array = graphsInformation[i].graphs.split(",");
             for (let index = 0; index < array.length; index++) {
                 var word = document.createElement("p");
                 word.setAttribute("class", "underline");
                 word.innerHTML = array[index];
+                savedLetter.push(array[index]);
                 if(array[index].length < 2) {
                     document.getElementById("graph-title").style.display = "block";
                     document.getElementById("graph-title").setAttribute("data-content", "In linguistics, a grapheme is the smallest unit of a writing system of any given language.[1] An individual grapheme may or may not carry meaning by itself, and may or may not correspond to a single phoneme of the spoken language.")
@@ -163,6 +170,7 @@ function UpdateWords(buttonNumber) {
             }
         }
     }
+    savedLetter.reverse();
     RemoveWords("words-list");
     for (let mainIndex = 0; mainIndex < words.length; mainIndex++) {
         var reBrackets = /\((.*?)\)/g;
@@ -184,17 +192,23 @@ function UpdateWords(buttonNumber) {
                     }
                 }
             }
-            var sortedArray;
+            var sortedArray = [];
             for (let i = 0; i < lettersArray.length; i++) {
-                if(lettersArray.includes(sortingLetter.toUpperCase())) {
-                    sortedArray = finalArray[lettersArray.indexOf(sortingLetter.toUpperCase())];
-                } else {
-                    sortedArray = [];
+                if(lettersArray[i].toString().includes(sortingLetter.toUpperCase()) && finalArray[i] != undefined) {
+                    for (let indexArrayLength = 0; indexArrayLength < finalArray[i].length; indexArrayLength++) {
+                        sortedArray.push(finalArray[i][indexArrayLength]);  
+                    }
                 }
             }
             for (let i = 0; i < sortedArray.length; i++) {
                 if(document.getElementById("letter-value-"+buttonNumber+"").innerHTML == sortedArray[i] || (document.getElementById("letter-value-"+buttonNumber+"").innerHTML == "∅" && sortedArray[i] == "mute")) {
-                    WriteWords(mainIndex, sortingLetter, sortedArray[i], "words-list");
+                    for (let letterLoop = 0; letterLoop < savedLetter.length; letterLoop++) {
+                        if(words[mainIndex].Word.includes(savedLetter[i])) {
+                            savedLetter = [savedLetter[i]];
+                            break;
+                        }
+                    }
+                    WriteWords(mainIndex, savedLetter[0], sortedArray[i], "words-list");
                     break;
                 }
             }
@@ -301,7 +315,6 @@ function CloseMenu() {
 }
 
 document.getElementsByTagName("video")[0].addEventListener('ended', function() {
-    document.getElementsByTagName("video")[0].load();
     document.getElementById("play-pause").innerHTML = "&#9658;";
     setTimeout(() => {
         var value = (100 / document.getElementsByTagName("video")[0].duration) * document.getElementsByTagName("video")[0].currentTime;

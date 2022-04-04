@@ -502,3 +502,18 @@ input[type=range]:focus {
     width: 20px;
     height: 20px;
 }
+
+.special-letter {
+    margin: 0;
+}
+
+.special-container {
+    justify-content: center;
+}
+
+.special-container img {
+    width: 18px;
+    height: 18px;
+    margin: auto 0;
+    cursor: pointer;
+}
