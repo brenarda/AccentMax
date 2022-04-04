@@ -8,6 +8,11 @@
     src: url(../../source-sans-pro/SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: specialFont;
+    src: url(../../source-sans-pro/Voces-Regular.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -55,7 +60,7 @@ body {
 .upper-menu-selection {
     width: auto;
     height: 40px;
-    background-color: #171717;
+    background-color: transparent;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -105,6 +110,7 @@ body {
     font-weight: bold;
     font-size: 30px;
     margin: 15px;
+    font-family: specialFont !important;
 }
 
 .sound-container img {
@@ -131,6 +137,10 @@ body {
     display: grid;
     grid-template-columns: 225px 225px 225px;
     padding: 10px 0;
+}
+
+.words-section {
+    font-family: specialFont !important;
 }
 
 .center {
@@ -323,11 +333,11 @@ video::-webkit-media-controls-current-time-display {
     border: 2px #3777FF solid;
     margin: 0 5px;
     border-radius: 5px;
-    height: 50px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     align-items: center;
     justify-content: center;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     cursor: pointer;
     transition: background-color .3s ease;
@@ -344,22 +354,30 @@ video::-webkit-media-controls-current-time-display {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #171717;
-    color: white;
+    background-color: transparent;
+    color: #D40AF5;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+}
+
+#volume-bar {
+    width: 60px;
+}
+
+#seek-bar {
+    width: 90px;
 }
 
 #video-controls {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 #video-controls div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
 }
 
 input[type=range]{
@@ -391,4 +409,8 @@ input[type=range]:focus {
 #mute img {
     width: 20px;
     height: 20px;
+}
+
+.not-clickable {
+    cursor: default !important;
 }

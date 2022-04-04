@@ -11,6 +11,11 @@
     src: url(../../../source-sans-pro/SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: specialFont;
+    src: url(../../../source-sans-pro/Voces-Regular.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -50,13 +55,14 @@ body {
 }
 
 .menu-letter {
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     text-align: center;
-    line-height: 100px;
-    background-color: #811394;
+    line-height: 60px;
+    background-color: #FFBE86;
+    color: black;
 }
 
 .main-content {
@@ -161,8 +167,8 @@ body {
     border: 2px #3777FF solid;
     margin: 0 auto;
     border-radius: 5px;
-    height: 50px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -176,6 +182,7 @@ body {
 
 .letter h3 {
     line-height: 30px;
+    font-family: specialFont !important;
 }
 
 .letter img,
@@ -194,6 +201,7 @@ body {
 .words-list {
     height: 600px;
     overflow-y: scroll;
+    font-family: specialFont !important;
 }
 
 .word-line {
@@ -454,23 +462,31 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #171717;
-    color: white;
+    background-color: transparent;
+    color: #D40AF5;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+}
+
+#volume-bar {
+    width: 60px;
+}
+
+#seek-bar {
+    width: 90px;
 }
 
 #video-controls {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     margin: 0 0 20px 20px;
 }
 
 #video-controls div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
 }
 
 input[type=range]{
@@ -516,5 +532,14 @@ input[type=range]:focus {
     width: 18px;
     height: 18px;
     margin: auto 0;
+    cursor: pointer;
+}
+
+.back-button-main-page {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 60px;
+    top: 150px;
     cursor: pointer;
 }

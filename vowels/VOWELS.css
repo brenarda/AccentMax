@@ -8,6 +8,11 @@
    src: url(../source-sans-pro/SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+   font-family: specialFont;
+   src: url(../source-sans-pro/Voces-Regular.ttf);
+}
+
 * {
    font-family: regularFont;
    font-weight: normal;
@@ -217,7 +222,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -237,7 +244,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -257,7 +266,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -277,7 +288,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -297,7 +310,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -317,7 +332,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -337,7 +354,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -357,7 +376,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -377,7 +398,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -397,7 +420,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -431,7 +456,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -465,7 +492,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -485,7 +514,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -505,7 +536,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -525,7 +558,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -545,7 +580,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -565,7 +602,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -585,7 +624,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -605,7 +646,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -625,7 +668,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -645,7 +690,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -665,7 +712,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -685,7 +734,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -705,7 +756,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -725,7 +778,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -745,7 +800,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -765,7 +822,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -785,7 +844,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -805,7 +866,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -825,7 +888,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -845,7 +910,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1057,7 +1124,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1077,7 +1146,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1097,7 +1168,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1255,7 +1328,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1275,7 +1350,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1295,7 +1372,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1315,7 +1394,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1335,7 +1416,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1493,7 +1576,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1513,7 +1598,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1533,7 +1620,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1553,7 +1642,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1573,7 +1664,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1593,7 +1686,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1613,7 +1708,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1633,7 +1730,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1653,7 +1752,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1673,7 +1774,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1693,7 +1796,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1713,7 +1818,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1733,7 +1840,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1891,7 +2000,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1911,7 +2022,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1931,7 +2044,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1951,7 +2066,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1971,7 +2088,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -1991,7 +2110,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2011,7 +2132,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2031,7 +2154,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2051,7 +2176,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2091,7 +2218,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2111,7 +2240,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2131,7 +2262,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2151,7 +2284,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2171,7 +2306,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2191,7 +2328,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2211,7 +2350,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2231,7 +2372,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2251,7 +2394,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2271,7 +2416,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2291,7 +2438,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2311,7 +2460,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2469,7 +2620,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2489,7 +2642,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2529,7 +2684,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2549,7 +2706,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2569,7 +2728,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2589,7 +2750,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2609,7 +2772,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2629,7 +2794,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2649,7 +2816,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2669,7 +2838,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2689,7 +2860,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2709,7 +2882,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2729,7 +2904,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -2749,7 +2926,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -3022,7 +3201,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -3042,7 +3223,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -3062,7 +3245,9 @@ input:focus, textarea:focus, select:focus
    
    font-weight: normal;
    font-style: normal;
-   font-size: 27px;
+   font-size: 1.22em;
+font-family: specialFont !important;
+line-height: 40px;
    padding: 1px 6px 1px 6px;
    text-align: center;
    -webkit-appearance: none;
@@ -3310,9 +3495,12 @@ input:focus, textarea:focus, select:focus
    display: flex;
    align-items: center;
    gap: 25px;
-   padding: 0 25px;
    z-index: 999999;
    color: white;
+}
+
+.flex:nth-child(1) {
+   margin-left: 25px;
 }
 
 .flex {
@@ -3352,4 +3540,18 @@ input:focus, textarea:focus, select:focus
 .tab-pane span {
    font-family: lightFont !important;
    font-size: 18px !important;
+}
+
+.flex-line-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   width: 100%;
+   text-align: center;
+}
+
+.flex-line-buttons a {
+   width:40px;
+   height:40px;
 }

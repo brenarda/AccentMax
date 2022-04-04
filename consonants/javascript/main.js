@@ -86,7 +86,7 @@ function SpeakWord(wordNumber) {
     speech.lang = "en-GB";       
     speech.text = msg;
     speech.volume = 1;
-    speech.rate = 1;
+    speech.rate = 0.7;
     speech.pitch = 1;    
     window.speechSynthesis.speak(speech);
 }

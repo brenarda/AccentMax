@@ -9,7 +9,9 @@ function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     wordWrapper.setAttribute("id", "word-wrapper-"+ i +"");
     
     var wordCreation = document.createElement("span");
-    wordCreation.setAttribute("class", "center pointer-cursor");
+    if(appendLocation != "append-words-favorite") {
+        wordCreation.setAttribute("class", "center pointer-cursor");
+    }
     if(appendLocation != "append-words-favorite") {
         wordCreation.setAttribute("onclick", "OpenWordPopUp("+i+")");
     }
@@ -172,7 +174,7 @@ function SpeakWord(wordNumber) {
     speech.lang = "en-GB";       
     speech.text = msg;
     speech.volume = 1;
-    speech.rate = 1;
+    speech.rate = 0.7;
     speech.pitch = 1;    
     window.speechSynthesis.speak(speech);
 }
@@ -201,7 +203,6 @@ function OpenWordPopUp(wordNumber) {
     wordWrapper.setAttribute("id", "word-wrapper-"+ wordNumber +"");
     
     var wordCreation = document.createElement("span");
-    wordCreation.setAttribute("class", "center pointer-cursor");
     wordCreation.innerHTML = words[wordNumber].WORDS;
 
     var breWrapper = document.createElement("div");

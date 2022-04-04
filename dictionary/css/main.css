@@ -8,6 +8,11 @@
     src: url(../../source-sans-pro/SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: specialFont;
+    src: url(../../source-sans-pro/Voces-Regular.ttf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -49,6 +54,7 @@ body {
 .words-list {
     height: 600px;
     overflow-y: scroll;
+    font-family: specialFont !important;
 }
 
 .word-line {
