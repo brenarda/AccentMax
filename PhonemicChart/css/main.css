@@ -140,21 +140,28 @@ a {
     padding: 15px;
     font-family: lightFont;
     color: #FFBE86;
+    margin-left: 115px;
+}
+
+.special-margin {
+    margin-right: 115px !important;
 }
 
 .monoptongs-buttons {
     display: grid;
     grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px;
-    place-content: center;
+    grid-template-rows: 65px 65px 65px;
     padding: 15px 0;
+    width: fit-content;
+    margin-left: 115px;
 }
 
 .diphtongs-buttons {
     display: grid;
     grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px;
-    place-content: center;
+    grid-template-rows: 65px 65px 65px;
+    width: fit-content;
+    margin-right: 115px;
     padding: 15px 0;
 }
 
@@ -182,9 +189,10 @@ a {
 .bottom-chart {
     display: grid;
     grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px;
-    place-content: center;
+    grid-template-rows: 65px 65px 65px;
     padding: 15px 0;
+    width: fit-content;
+    margin: 0 115px;
 }
 
 .orange p {
@@ -234,9 +242,14 @@ a {
 
 .gap {
     justify-content: space-around;
+    margin-left: 115px;
 }
 
 .main-purple-title {
     color: #d41afe !important;
     font-weight: bold;
+}
+
+.normal-margin {
+    margin-left: 0 !important;
 }

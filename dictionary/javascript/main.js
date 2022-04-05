@@ -58,7 +58,7 @@ var words = JSON.parse(JSON.stringify(data));
 
 function LoadWords() {
     var actualPage = 0;
-    for (let i = 0; i < (Math.ceil((words.length/12))-1); i++) {
+    for (let i = 0; i < (Math.ceil((words.length/10))-1); i++) {
         var page = document.createElement("div");
         page.setAttribute("id", "page-"+actualPage+"");
         page.setAttribute("class", "page-words");
@@ -66,7 +66,7 @@ function LoadWords() {
             page.setAttribute("class", "page-active");
         }
         document.getElementById("words-list").appendChild(page);
-        for (let index = (0 + (12*actualPage)); index < (12 + (12*actualPage)); index++) {
+        for (let index = (0 + (10*actualPage)); index < (10 + (10*actualPage)); index++) {
             WriteWords(index, "", "", "page-"+actualPage+"");
         }
         actualPage++;
@@ -76,14 +76,14 @@ function LoadWords() {
 var lastPage = 0;
 
 function Next() {
-    if(lastPage < (Math.ceil((words.length/12)))) {
+    if(lastPage < (Math.ceil((words.length/10)))) {
         document.getElementById("page-"+lastPage+"").style.display = "none";
         document.getElementById("page-"+(lastPage + 1)+"").style.display = "block";
         document.getElementById("previous").style.opacity = "1";
         document.getElementById("previous").style.cursor = "pointer";
         lastPage++;
     }
-    if(lastPage == (Math.ceil((words.length/12))-1)) {
+    if(lastPage == (Math.ceil((words.length/10))-1)) {
         document.getElementById("next").style.opacity = "0.5";
         document.getElementById("next").style.cursor = "auto";
     }

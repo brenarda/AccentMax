@@ -52,7 +52,7 @@ body {
 }
 
 .words-list {
-    height: 600px;
+    height: 500px;
     overflow-y: scroll;
     font-family: specialFont !important;
 }
