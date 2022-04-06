@@ -53,7 +53,7 @@ body {
 
 .words-list {
     height: 500px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     font-family: specialFont !important;
 }
 
