@@ -89,7 +89,7 @@ a {
     display: flex;
     align-items: center;
     gap: 25px;
-    padding: 0 25px;
+    padding: 0 25px; // to me it does not come at the bottom of the page
 }
 
 .flex {
