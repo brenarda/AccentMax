@@ -8,7 +8,7 @@ function WriteWords(i, underlineLetter, underlineBRE, appendLocation) {
     underlineBRE = "";
     var wordContainer = document.createElement("div");
     wordContainer.setAttribute("class", "word-line");
-    wordContainer.setAttribute("id", "word-line-"+ i +"");
+    wordContainer.setAttribute("id", "word-line-"+ i +""); //we dont have underline anymore
 
     var wordWrapper = document.createElement("div");
     wordWrapper.setAttribute("class", "word-wrapper");
@@ -264,7 +264,7 @@ function ChangeImg(imgNumber) {
 }
 
 var savedWords = [];
-var favoriteWordsVisible = false;
+var favoriteWordsVisible = false; // somewhere here it should be the fav words issue
 
 function ShowFavorites() {
     if(!favoriteWordsVisible) {
