@@ -1,6 +1,6 @@
 @font-face {
     font-family: lightFont;
-    src: url(../../source-sans-pro/SourceSansPro-Light.ttf);
+    src: url(../../source-sans-pro/SourceSansPro-Light.ttf); // we use Voces because it displays phonetics
 }
 
 @font-face {
