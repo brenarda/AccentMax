@@ -223,3 +223,10 @@ function ChangeLetter(letterNumber) {
     }
     teste[letterNumber].classList.add("sound-selected");
 }
+
+function CloseTerms() {
+    document.getElementById("terms-container").style.display = "none"
+ }
+ function ShowTerms() {
+    document.getElementById("terms-container").style.display = "block"
+ }

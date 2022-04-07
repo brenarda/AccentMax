@@ -290,3 +290,10 @@ function SearchWords() {
         }
     }, 100);
 }
+
+function CloseTerms() {
+    document.getElementById("terms-container").style.display = "none"
+ }
+ function ShowTerms() {
+    document.getElementById("terms-container").style.display = "block"
+ }

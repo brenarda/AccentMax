@@ -358,3 +358,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#volume-bar").addEventListener("change", function() {
     document.getElementsByTagName("video")[0].volume = document.querySelector("#volume-bar").value;
 });
+
+function CloseTerms() {
+    document.getElementById("terms-container").style.display = "none"
+}
+
+function ShowTerms() {
+    document.getElementById("terms-container").style.display = "block"
+}

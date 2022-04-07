@@ -124,3 +124,60 @@ a {
     position: absolute;
     right: 25px;
 }
+
+.terms-container {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 570px;
+    z-index: 999999;
+}
+
+.terms {
+    width: 750px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.terms p,
+.terms h3,
+.terms h1 {
+    color: black !important;
+}
+
+.terms::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.terms::-webkit-scrollbar-thumb {
+    background-color: black;
+    height: 90px;
+    border: 15px rgba(0, 0, 0, 0);
+    border-style: solid none solid none;
+    background-clip: padding-box;
+}
+
+.terms h3 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.container-button-terms {
+    width: 75px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    color: black !important;
+    border-radius: 10px;
+    background-color: #FFBE86;
+}
+
+.terms-button {
+    cursor: pointer;
+}
